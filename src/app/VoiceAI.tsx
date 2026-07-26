@@ -145,6 +145,27 @@ function AudioPlayer({ title, description, useCase, tag, color, index }: AudioPl
           )}
         </button>
 
+        <a
+  href={`/audio/${index === 0 ? 'inbound' : 'outbound'}.mp3`}
+  download
+  className="w-9 h-9 rounded-full border border-neutral-200 flex items-center justify-center hover:bg-neutral-50 transition-all hover:scale-105"
+  title="Download Recording"
+>
+  <svg
+    className="w-4 h-4 text-neutral-600"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"
+    />
+  </svg>
+</a>
+
         <div className="flex-1 h-1 bg-neutral-100 rounded-full overflow-hidden cursor-pointer" onClick={handleProgressClick}>
           <div
             className={`h-full ${c.bar} rounded-full transition-all duration-100`}
