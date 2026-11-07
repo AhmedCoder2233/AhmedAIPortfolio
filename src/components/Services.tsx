@@ -14,10 +14,10 @@ function Card({ s, i, n, p }: { s: (typeof services)[number]; i: number; n: numb
   const Icon = s.icon
   return (
     <motion.li style={{ scale, top: 84 + i * 14 }} className={`origin-top sticky rounded-[24px] p-7 sm:p-10 md:p-12 ${tone[i]}`}>
-      <div className="grid gap-10 md:min-h-[46vh] md:grid-cols-[1.2fr_1fr] md:items-end">
+      <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-12">
         <div>
           <Icon size={44} strokeWidth={1.6} aria-hidden="true" />
-          <h3 className="mt-8 text-[clamp(2.2rem,5vw,4rem)] font-extrabold leading-[0.98]">{s.title}</h3>
+          <h3 className="mt-6 text-[clamp(2.2rem,4.4vw,3.75rem)] font-extrabold leading-[0.98]">{s.title}</h3>
           <p className={`mt-5 max-w-md text-lg ${sub[i]}`}>{s.text}</p>
         </div>
         <ul className="space-y-3">
