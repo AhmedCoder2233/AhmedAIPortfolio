@@ -2,7 +2,7 @@ import { PhoneCall, Workflow, Globe } from 'lucide-react'
 
 export const SITE = {
   name: 'Ahmed Memon',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ahmedmemon.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ahmed-portfolio.xyz',
   email: 'ahmedmemon3344@gmail.com',
   title: 'Ahmed Memon | AI Voice Agents & Automation Engineer',
   description:
